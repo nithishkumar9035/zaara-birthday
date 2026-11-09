@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Zaara 🖤🫶🏻</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+min-height:100vh;
+padding:25px 14px;
+font-family:Georgia,serif;
+color:#684457;
+background:linear-gradient(135deg,#fff5fa,#f5dce9,#ffeef5);
+display:flex;
+justify-content:center;
+align-items:center;
+overflow-x:hidden
+}
+
+.card{
+display:none;
+width:100%;
+max-width:720px;
+padding:35px 25px;
+background:rgba(255,255,255,.92);
+border-radius:28px;
+text-align:center;
+box-shadow:0 15px 50px rgba(140,70,105,.15);
+border:1px solid white
+}
+
+.top{color:#bd7899;font:12px Arial;letter-spacing:4px}
+h1{margin:20px 0 12px;font-size:clamp(42px,10vw,65px);font-weight:normal;color:#a54d77;line-height:1.15}
+h1 span{font-style:italic}
+.subtitle{font:13px Arial;letter-spacing:2px;color:#a67b91;line-height:1.8}
+.flower{font-size:35px;margin:20px}
+.divider{height:1px;width:75px;background:#dbaac1;margin:30px auto}
+.section-title{font-size:24px;color:#a54d77;margin:28px 0 15px;font-weight:normal}
+.message{font-size:18px;line-height:1.95;text-align:left;margin:23px auto;max-width:580px}
+.center{text-align:center}
+
+button{
+background:#a9577c;
+color:white;
+border:none;
+border-radius:30px;
+padding:16px 27px;
+font-size:15px;
+margin-top:20px;
+cursor:pointer;
+box-shadow:0 7px 20px #a9577c35
+}
+
+button:hover{background:#914568}
+button:disabled{opacity:.8;cursor:default}
+
+#surprise{
+display:none;
+background:#fff2f8;
+border:1px solid #f0cddd;
+border-radius:20px;
+padding:25px 18px;
+margin-top:25px;
+font-size:18px;
+line-height:1.9;
+animation:appear .7s ease
+}
+
+@keyframes appear{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.footer{margin-top:35px;font:11px Arial;letter-spacing:2px;color:#b18a9d}
+
+.floating{
+position:fixed;
+pointer-events:none;
+animation:float 5s ease-in-out infinite
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0) rotate(0)}
+50%{transform:translateY(-25px) rotate(15deg)}
+}
+
+@media(max-width:480px){
+.card{padding:30px 20px}
+.message{font-size:17px}
+}
+
+#lockScreen{
+width:100%;
+max-width:420px;
+padding:35px 25px;
+background:rgba(255,255,255,.94);
+border-radius:28px;
+text-align:center;
+box-shadow:0 15px 50px rgba(140,70,105,.15);
+border:1px solid white
+}
+
+#lockScreen h2{
+font-weight:normal;
+color:#a54d77;
+font-size:30px;
+margin:14px 0
+}
+
+#lockScreen p{
+font:15px Arial;
+line-height:1.7;
+color:#8f687c
+}
+
+#passwordInput{
+width:100%;
+padding:14px 16px;
+margin:20px 0 10px;
+border:1px solid #e6bfd0;
+border-radius:14px;
+font-size:16px;
+text-align:center;
+outline:none
+}
+
+#passwordError{
+min-height:22px;
+color:#b33c68;
+font:13px Arial;
+margin-top:10px
+}
+</style>
+</head>
+
+<body>
+
+<div class="floating" style="top:10%;left:8%;font-size:25px">♡</div>
+<div class="floating" style="top:20%;right:8%;font-size:25px">✦</div>
+<div class="floating" style="bottom:10%;left:10%;font-size:25px">🌸</div>
+
+<!-- PASSWORD SCREEN -->
+
+<div id="lockScreen">
+<div style="font-size:42px">🔐🎀</div>
+
+<h2>Just for you...</h2>
+
+<p>Indha little surprise open panna password enter pannu 🖤</p>
+
+<input
+id="passwordInput"
+type="password"
+placeholder="Enter password"
+autocomplete="off"
+/>
+
+<button type="button" onclick="unlockPage()">Unlock 💗</button>
+
+<div id="passwordError" aria-live="polite"></div>
+</div>
+
+<!-- BIRTHDAY WEBSITE -->
+
+<div class="card" id="birthdayCard">
+
+<div class="top">A SPECIAL DAY FOR SOMEONE SPECIAL</div>
+
+<div class="flower">🌷 🦋 🌷</div>
+
+<h1>Happy Birthday<br><span>Zaara 🖤🫶🏻</span></h1>
+
+<div class="subtitle">INNAIKU UNAKKAGA ORU CHINNA SURPRISE 🎀</div>
+
+<div class="divider"></div>
+
+<h2 class="section-title">Konjam Unakkaga... 🥹</h2>
+
+<p class="message">
+Iniya pirandhanaal vazhthukkal di Zaara 🖤🫶🏻! 🥳🎂
+Innaiku unakku romba special-aana day.
+Indha birthday-la unakku neraya happiness kidaikkanum,
+nee aasai padradhellam nadakkanum, un face-la irukkura
+andha smile eppovume ippadiye irukkanum.
+Un life-la varra ovvoru naalum oru pudhu beautiful
+memory-ah maaranum. 💗
+</p>
+
+<p class="message">
+Unakku theriyuma, sila memories namma phone gallery-la
+photos-ah irukkum, sila memories namma mind-la mattum
+irukkum. Aana rendu memories-um namakku romba special.
+Namma serndhu spend panna chinna chinna moments kooda
+sometimes nenachaa automatic-ah smile vara vachidum.
+Adhu dhaan memories-oda azhagu. 🥹
+</p>
+
+<div class="divider"></div>
+
+<h2 class="section-title">Miles Apart, Still Special 🌙</h2>
+
+<p class="message">
+Ippo namma rendu perum different places-la irukkom.
+Munna maadhiri eppovume meet panna mudiyadhu.
+Daily paakka mudiyama irukkuradhu konjam kashtam dhaan.
+Sometimes romba miss aagum.
+</p>
+
+<p class="message">
+Aana oru vishayam purinjirukku.
+Distance vandhadhunaala memories-oda value
+koraiyala. Actually, andha memories innum
+special-ah theriyudhu.
+Oru naal thirumba meet pannumbodhu,
+"Namma appo ippadi ellam pannom la!"
+nu solli sirikkura andha naalukkaaga
+wait pannittu irukkuren. 🥹🤍
+</p>
+
+<p class="message">
+Ellaa naalum perfect-ah irukka vendiyadhilla di.
+Sila naal busy-ah irukkalam, sila naal pesura
+time kidaikkama pogalam, sila neram chinna
+misunderstandings kooda varalam.
+Aana namma create panna nalla memories-ah
+marandhuda koodadhu.
+Namma life-la innum neraya beautiful chapters
+irukku. 📖✨
+</p>
+
+<div class="divider"></div>
+
+<h2 class="section-title">A Few Wishes For You 🌸</h2>
+
+<p class="message">
+Indha pudhu year unakku confidence kudukkanum.
+Nee edukura ovvoru step-layum success kidaikkanum.
+Un dreams ellam one by one achieve pannanum.
+Unakku pidicha things ellam un life-la neraya
+nadakkanum.
+</p>
+
+<p class="message">
+Kashtamana days vandhaalum unnai nee lose
+pannidadha. Unna nee nambanum.
+Nee evlo strong-ngradha sila nerangalil
+unakke theriyama pogalam.
+Aana nee nenakkiradha vida capable.
+Un happiness-ah eppovume important-ah paaru.
+Smile pannitte iru di. 🌻
+</p>
+
+<p class="message">
+Innaiku unakku favourite food kidaikkanum 😋,
+cake super-ah irukkanum 🎂,
+neraya photos edukkanum 📸,
+unexpected gifts varanum 🎁,
+phone full-ah birthday wishes varanum.
+Aana day mudiyumbodhu,
+"Indha birthday romba beautiful-ah irundhuchu"
+nu nee feel pannanum.
+</p>
+
+<p class="message">
+Indha birthday-ku naan pakkathula illa.
+Un kooda cake cut panna mudiyala,
+un face-la irukkura happiness-ah direct-ah
+paakka mudiyala.
+Aana indha chinna website create pannumbodhu,
+ovvoru paragraph-um unakkaga ezhudhinen.
+Idhu oru normal birthday message illa;
+unakkaga create panna oru chinna surprise. 💌
+</p>
+
+<div class="divider"></div>
+
+<p class="message center">
+Once again, Happy Birthday di
+Zaara 🖤🫶🏻! 🥹💗
+<br><br>
+Unakku innum neraya birthdays,
+neraya happiness,
+neraya beautiful memories,
+neraya reasons to smile kidaikkanum.
+<br><br>
+Keep smiling, keep shining! 🦋🌷
+</p>
+
+<button id="surpriseBtn" onclick="openSurprise()">
+One Last Little Surprise 🎁
+</button>
+
+<div id="surprise">
+
+<div style="font-size:40px">🎂💗✨</div>
+
+<h2 style="color:#a54d77;font-weight:normal;margin:15px">
+One More Thing, Zaara 🖤🫶🏻...
+</h2>
+
+<p>
+Indha website-la irukkura ovvoru
+paragraph-um namma memories-oda
+oru chinna part.
+<br><br>
+
+Bike ride-la irundhu Ibaco varaikkum,
+bus journey-la irundhu un veettu
+munnadi ninna moments varaikkum...
+<br><br>
+
+Idhellam thirumba repeat panna
+mudiyuma nu theriyadhu.
+Aana indha memories-ah nenachaa
+eppovume oru smile varum.
+<br><br>
+
+Innum neraya places poganum,
+neraya photos edukkanum,
+neraya memories create pannanum.
+<br><br>
+
+<strong>
+This is not the end of our
+memories... Just another beautiful
+chapter waiting to begin. 🖤🫶🏻
+</strong>
+<br><br>
+
+Happy Birthday Once Again,
+Zaara 🖤🫶🏻! 🎀
+</p>
+
+<div style="font-size:35px;margin-top:15px">🦋🌷💗🌙</div>
+
+</div>
+
+<div class="footer">
+MADE WITH MEMORIES · ESPECIALLY FOR ZAARA 🖤🫶🏻
+</div>
+
+</div>
+
+<script>
+
+// PASSWORD CHECK
+
+function unlockPage(){
+
+const entered = document.getElementById('passwordInput').value;
+
+if(entered === 'I MISS YOU'){
+
+document.getElementById('lockScreen').style.display='none';
+
+document.getElementById('birthdayCard').style.display='block';
+
+window.scrollTo({top:0,behavior:'smooth'});
+
+}
+
+else{
+
+document.getElementById('passwordError').textContent='Wrong password! Try again 🥺';
+
+document.getElementById('passwordInput').value='';
+
+}
+
+}
+
+document.getElementById('passwordInput').addEventListener('keydown',function(e){
+
+if(e.key==='Enter') unlockPage();
+
+});
+
+// SURPRISE BUTTON
+
+function openSurprise(){
+
+const surprise = document.getElementById("surprise");
+
+const button = document.getElementById("surpriseBtn");
+
+surprise.style.display = "block";
+
+button.innerHTML = "Surprise Unlocked! 💗";
+
+button.disabled = true;
+
+surprise.scrollIntoView({behavior:"smooth",block:"center"});
+
+for(let i=0;i<35;i++){
+
+const emoji = document.createElement("span");
+
+emoji.innerHTML = ["💗","🌸","✨","🦋","♡"][Math.floor(Math.random()*5)];
+
+emoji.style.position = "fixed";
+
+emoji.style.left = Math.random()*100 + "vw";
+
+emoji.style.top = Math.random()*100 + "vh";
+
+emoji.style.fontSize = "24px";
+
+emoji.style.pointerEvents = "none";
+
+emoji.style.zIndex = "100";
+
+emoji.style.animation = "float 3s ease-out forwards";
+
+document.body.appendChild(emoji);
+
+setTimeout(()=>emoji.remove(),3500);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
